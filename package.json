@@ -1,17 +1,31 @@
 {
-  "name": "xuan",
-  "private": true,
-  "version": "0.0.0",
+  "name": "Xuan-UI",
+  "private": false,
+  "version": "0.0.1",
+  "main": "./dist/Xuan-UI.umd.js",
+  "module": "./dist/Xuan-UI.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/Xuan-UI.es.js",
+      "require": "./dist/Xuan-UI.umd.js"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "sass": "^1.53.0",
     "vue": "^3.2.25"
   },
   "devDependencies": {
+    "@types/node": "^18.0.0",
     "@vitejs/plugin-vue": "^2.3.3",
+    "eslint": "^8.18.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
     "vue-tsc": "^0.34.7"

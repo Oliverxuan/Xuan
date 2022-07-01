@@ -1,6 +1,13 @@
+<!--
+ * @Author: Yinzhuoxuan
+ * @Date: 2022-07-01 09:50:57
+ * @LastEditors: Yinzhuoxuan
+ * @LastEditTime: 2022-07-01 16:13:47
+ * @Description: 
+-->
 <template>
 	<div class="container">
-		<xButton>Xuan-UI</xButton>
+		<router-view></router-view>
 	</div>
 </template>
 
@@ -15,5 +22,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+body,
+html {
+	margin: 0;
+}
 </style>

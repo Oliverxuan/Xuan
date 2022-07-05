@@ -2,7 +2,7 @@
  * @Author: Yinzhuoxuan
  * @Date: 2022-07-01 15:37:21
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-05 14:18:02
+ * @LastEditTime: 2022-07-05 17:13:22
  * @Description: 
 -->
 <template>
@@ -55,7 +55,8 @@ export default {
 	height: 100vh;
 	display: flex;
 	.left-menu {
-		width: 360px;
+		flex: 2;
+		min-width: 20%;
 		height: auto;
 		overflow-y: auto;
 		border: 1px solid #f0f0f0;
@@ -65,6 +66,13 @@ export default {
 			padding: 0 10px;
 			box-sizing: border-box;
 			cursor: pointer;
+			font-weight: 400;
+			font-size: 14px;
+			opacity: 0.67;
+			&:hover,
+			&:focus {
+				color: #0e80eb;
+			}
 		}
 		li.active {
 			border-right: 4px solid #0e80eb;
@@ -73,7 +81,7 @@ export default {
 		}
 	}
 	.router-view {
-		flex: 1;
+		flex: 8;
 		height: auto;
 		overflow-y: auto;
 		padding: 0 15px;

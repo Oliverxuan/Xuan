@@ -15,8 +15,14 @@ Vue 3 + TypeScript + Vite
 
 ## 开始
 
-### yarn
+### 安装所需依赖
+yarn
 
-### yarn dev
+### 启动服务
+yarn dev
 
-### yarn build
+### 服务地址
+http://localhost:3000/#/
+
+### 打包
+yarn build

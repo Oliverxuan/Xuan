@@ -2,7 +2,7 @@
  * @Author: Yinzhuoxuan
  * @Date: 2022-07-01 09:50:57
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-01 16:01:40
+ * @LastEditTime: 2022-07-05 15:11:49
  * @Description: 
  */
 import { defineConfig } from 'vite'
@@ -32,6 +32,13 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': resolve(__dirname, 'src')
+        }
+    },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@use "./src/assets/styles/style.scss" as * ;`
+            }
         }
     }
 })

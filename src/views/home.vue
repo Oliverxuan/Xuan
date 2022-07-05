@@ -2,7 +2,7 @@
  * @Author: Yinzhuoxuan
  * @Date: 2022-07-01 15:37:21
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-01 16:37:29
+ * @LastEditTime: 2022-07-05 14:18:02
  * @Description: 
 -->
 <template>
@@ -13,7 +13,7 @@
 				:key="index"
 				:class="{active:activeIndex === index}"
 				@click="switchMenu(item,index)"
-			>{{item.name}}</li>
+			>{{item.name+"  "+item.description}}</li>
 		</div>
 		<div class="router-view">
 			<router-view></router-view>

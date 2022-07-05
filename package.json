@@ -19,6 +19,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "highlight.js": "^11.5.1",
     "sass": "^1.53.0",
     "vite-plugin-md": "^0.12.4",
     "vue": "^3.2.25",

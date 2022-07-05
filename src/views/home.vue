@@ -34,7 +34,7 @@ export default {
 		const activeIndex = ref(0);
 		const router = useRouter();
 
-		const switchMenu = (item, index) => {
+		const switchMenu = (item: any, index: any) => {
 			activeIndex.value = index;
 			router.push({
 				name: item.name,
@@ -55,9 +55,9 @@ export default {
 	height: 100vh;
 	display: flex;
 	.left-menu {
-		flex: 2;
-		min-width: 20%;
+		flex: 1.53;
 		height: auto;
+		min-width: 192px;
 		overflow-y: auto;
 		border: 1px solid #f0f0f0;
 		li {
@@ -72,6 +72,7 @@ export default {
 			&:hover,
 			&:focus {
 				color: #0e80eb;
+				background: #dcdfe6;
 			}
 		}
 		li.active {
@@ -81,7 +82,7 @@ export default {
 		}
 	}
 	.router-view {
-		flex: 8;
+		flex: 8.47;
 		height: auto;
 		overflow-y: auto;
 		padding: 0 15px;

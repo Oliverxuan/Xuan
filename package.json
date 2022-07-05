@@ -20,11 +20,11 @@
   },
   "dependencies": {
     "highlight.js": "^11.5.1",
-    "lottie-web": "^5.9.6",
     "sass": "^1.53.0",
     "vite-plugin-md": "^0.12.4",
     "vue": "^3.2.25",
-    "vue-router": "^4.0.16"
+    "vue-router": "^4.0.16",
+    "vue3-lottie": "^2.2.4"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

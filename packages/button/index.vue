@@ -44,7 +44,7 @@ const xClass = computed(() => {
 	cursor: pointer;
 	&:hover,
 	&:focus {
-		opacity: 0.8;
+		opacity: 0.5;
 	}
 }
 .x-button-default {
@@ -77,11 +77,11 @@ const xClass = computed(() => {
 	border-color: $danger;
 }
 .x-button-disabled {
-	opacity: 0.4;
+	opacity: 0.8;
 	cursor: no-drop;
 	&:hover,
 	&:focus {
-		opacity: 0.4;
+		opacity: 0.8;
 	}
 }
 </style>

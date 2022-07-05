@@ -9,8 +9,11 @@
 	<div class="container">
 		<div class="header">
 			<div class="header-logo">
-				<div id="animation"></div>
-				<div @click="logoAnimation">Xuan UI</div>
+				<Vue3Lottie
+					class="logo-animation"
+					:animationData="logoJson"
+				/>
+				<div>Xuan UI</div>
 			</div>
 			<div class="header-search"></div>
 			<div class="header-switch"></div>
@@ -23,32 +26,8 @@
 
 
 
-<script lang="ts">
-import { onMounted } from 'vue';
-import lottie from 'lottie-web';
-
-export default {
-	name: 'App',
-	setup() {
-		const logoAnimation = () => {
-			console.log(123);
-			const lottieAnimationItem = lottie.loadAnimation({
-				// 选取一个容器，用于渲染动画
-				container: document.querySelector('#animatiom'),
-				// 定义JSON文件路径
-				path: require('./assets/108680-atoms-lottie-animation.json'),
-				// 是否循环播放
-				loop: true,
-				// 渲染的格式svg/canvas/html，svg性能更优，兼容性更好
-				renderer: 'svg',
-			});
-		};
-		return { logoAnimation };
-		onMounted(() => {
-			logoAnimation();
-		});
-	},
-};
+<script setup lang="ts">
+import logoJson from '../public/lottie/110955-rocket-launch-animation-space-exploration.json';
 </script>
 
 <style lang="scss">
@@ -65,27 +44,31 @@ html {
 		display: flex;
 		&-logo {
 			height: 60px;
-			flex: 2;
-			border-right: 1px solid #dcdfe6;
+			flex: 1.5;
 			display: flex;
-			justify-content: center;
+			justify-content: space-around;
 			align-items: center;
 			div {
+				flex: 1.5;
 				margin: 0;
 				padding: 0;
 				font-size: 30px;
 				height: 45px;
-				width: 110px;
-				font-weight: 330;
+				width: 120px;
+				font-weight: 300;
+				border-right: 1px solid #dcdfe6;
 			}
-			#animation {
-				height: 40px;
-				width: 40px;
+			.logo-animation {
+				flex: 1;
+				height: 70px;
+				width: 70px;
+				transform: rotate(-90deg);
 			}
 		}
+
 		&-search {
 			height: 60px;
-			flex: 8;
+			flex: 8.5;
 		}
 	}
 }

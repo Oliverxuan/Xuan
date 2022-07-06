@@ -1,18 +1,24 @@
 {
-  "name": "Xuan-UI",
+  "name": "cookie-ui-xuan",
   "private": false,
-  "version": "0.0.1",
-  "main": "./dist/Xuan-UI.umd.js",
-  "module": "./dist/Xuan-UI.es.js",
+  "author": "oliverxuan",
+  "version": "0.1.4",
+  "description": "Cookie UI 组件库,完美支持 Vue3 和 TS 使用 vite 做到更快速度，更小体积。",
+  "main": "./dist/cookie-ui-xuan.umd.js",
+  "module": "./dist/cookie-ui-xuan.es.js",
   "exports": {
     ".": {
-      "import": "./dist/Xuan-UI.es.js",
-      "require": "./dist/Xuan-UI.umd.js"
+      "import": "./dist/cookie-ui-xuan.es.js",
+      "require": "./dist/cookie-ui-xuan.umd.js"
     }
   },
   "files": [
     "dist/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Oliverxuan/xuan.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

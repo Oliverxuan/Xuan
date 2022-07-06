@@ -1,31 +1,34 @@
 <!--
  * @Author: Yinzhuoxuan
- * @Date: 2022-07-01 09:50:57
+ * @Date: 2022-07-06 09:35:28
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-06 11:19:14
+ * @LastEditTime: 2022-07-06 17:02:57
  * @Description:
 -->
 
-# 玄 UI 组件库
+# Cookie UI 组件库
 
 ## 完美支持 Vue3 和 TS 使用 vite 做到更快速度，更小体积。
 
-Xuan UI component library perfectly fits vue3 and typescript for development
+Cookie UI component library perfectly fits vue3 and typescript for development
 
 ## 开始
 
-### 安装所需依赖
+### 导入依赖 (main)
 
-yarn
+```js
+import xuan from 'cookie-ui-xuan';
+import '../node_modules/cookie-ui-xuan/dist/style.css';
 
-### 启动服务
+const app = createApp(App);
+app.use(xuan);
+app.mount('#app');
+```
 
-yarn dev
+### 在项目中引用
 
-### 服务地址
-
-http://localhost:3000/#/
-
-### 打包
-
-yarn build
+```html
+<template>
+  <x-button type="success">默认按钮</x-button>
+</template>
+```

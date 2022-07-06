@@ -2,14 +2,14 @@
  * @Author: Yinzhuoxuan
  * @Date: 2022-07-06 11:01:23
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-06 14:40:35
+ * @LastEditTime: 2022-07-06 16:19:31
  * @Description: 
 -->
 <template>
 	<div class='container'>
 		<div class="main">
 			<div class="description">
-				<h1>Xuan UI</h1>
+				<h1>Cookie UI</h1>
 				<h3>完美支持 Vue 3 和 Typescript 使用 vite 做到更快速度，更小体积。</h3>
 			</div>
 			<div class="logo">
@@ -35,11 +35,10 @@
 import { ref } from 'vue';
 import router from '../router';
 export default { name: 'index' };
+import logoJson from '@/assets/lottie/110955-rocket-launch-animation-space-exploration.json';
 </script>
 
 <script setup lang="ts">
-import logoJson from '/public/lottie/110955-rocket-launch-animation-space-exploration.json';
-
 const switchList = ref([
 	{
 		name: '即刻开始',

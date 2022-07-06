@@ -2,7 +2,7 @@
  * @Author: Yinzhuoxuan
  * @Date: 2022-07-01 09:50:57
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-06 14:36:27
+ * @LastEditTime: 2022-07-06 16:38:11
  * @Description: 
 -->
 <template>
@@ -16,7 +16,7 @@
 					class="logo-animation"
 					:animationData="logoJson"
 				/>
-				<div>Xuan UI</div>
+				<div>Cookie UI</div>
 			</div>
 			<div class="header-search">
 				<input
@@ -39,7 +39,7 @@ export default { name: 'App' };
 </script>
 
 <script setup lang="ts">
-import logoJson from '/public/lottie/110955-rocket-launch-animation-space-exploration.json';
+import logoJson from './assets/lottie/110955-rocket-launch-animation-space-exploration.json';
 import { ref } from 'vue';
 import router from './router';
 

@@ -2,7 +2,7 @@
  * @Author: Yinzhuoxuan
  * @Date: 2022-07-01 09:50:57
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-05 15:11:49
+ * @LastEditTime: 2022-07-06 16:38:17
  * @Description: 
  */
 import { defineConfig } from 'vite'
@@ -26,7 +26,7 @@ export default defineConfig({
         },
         lib: {
             entry: './packages/index.ts',
-            name: 'Xuan-UI'
+            name: 'cookie-ui'
         }
     },
     resolve: {
@@ -39,6 +39,7 @@ export default defineConfig({
             scss: {
                 additionalData: `@use "./src/assets/styles/style.scss" as * ;`
             }
-        }
+        },
     }
+
 })

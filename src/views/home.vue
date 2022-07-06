@@ -2,7 +2,7 @@
  * @Author: Yinzhuoxuan
  * @Date: 2022-07-01 15:37:21
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-05 17:13:22
+ * @LastEditTime: 2022-07-06 14:12:18
  * @Description: 
 -->
 <template>
@@ -30,7 +30,7 @@ import router from '../router';
 
 export default {
 	setup() {
-		const menuList = ref(list[0].children);
+		const menuList = ref(list[3].children);
 		const activeIndex = ref(0);
 		const router = useRouter();
 
@@ -63,7 +63,8 @@ export default {
 		li {
 			list-style: none;
 			line-height: 40px;
-			padding: 0 10px;
+			padding: 0px 10px;
+			margin: 10px 0;
 			box-sizing: border-box;
 			cursor: pointer;
 			font-weight: 400;

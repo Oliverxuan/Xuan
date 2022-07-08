@@ -1,3 +1,10 @@
+<!--
+ * @Author: Yinzhuoxuan
+ * @Date: 2022-07-06 09:35:28
+ * @LastEditors: Yinzhuoxuan
+ * @LastEditTime: 2022-07-08 15:04:32
+ * @Description: 
+-->
 <template>
 	<button
 		:class="xClass"
@@ -22,12 +29,14 @@ const props = defineProps({
 		default: 'default',
 	},
 	disabled: Boolean,
+	plain: Boolean,
 });
 const xClass = computed(() => {
 	return [
 		`x-button`,
 		`x-button-${props.type}`,
 		props.disabled ? 'x-button-disabled' : '',
+		props.plain ? 'x-button-plain' : '',
 	];
 });
 </script>
@@ -46,42 +55,52 @@ const xClass = computed(() => {
 	&:focus {
 		opacity: 0.5;
 	}
-}
-.x-button-default {
-	color: #333;
-	border: 1px solid #dcdfe6;
-}
-.x-button-primary {
-	color: #fff;
-	background: $primary;
-	border-color: $primary;
-}
-.x-button-success {
-	color: #fff;
-	background: $success;
-	border-color: $success;
-}
-.x-button-info {
-	color: #fff;
-	background: $info;
-	border-color: $info;
-}
-.x-button-warning {
-	color: #fff;
-	background: $warning;
-	border-color: $warning;
-}
-.x-button-danger {
-	color: #fff;
-	background: $danger;
-	border-color: $danger;
-}
-.x-button-disabled {
-	opacity: 0.8;
-	cursor: no-drop;
-	&:hover,
-	&:focus {
+	&-default {
+		color: #333;
+		border: 1px solid #dcdfe6;
+	}
+	&-primary {
+		color: #fff;
+		background: $primary;
+		border-color: $primary;
+	}
+	&-success {
+		color: #fff;
+		background: $success;
+		border-color: $success;
+	}
+	&-info {
+		color: #fff;
+		background: $info;
+		border-color: $info;
+	}
+	&-warning {
+		color: #fff;
+		background: $warning;
+		border-color: $warning;
+	}
+	&-danger {
+		color: #fff;
+		background: $danger;
+		border-color: $danger;
+	}
+	&-disabled {
 		opacity: 0.8;
+		cursor: no-drop;
+		&:hover,
+		&:focus {
+			opacity: 0.8;
+		}
+	}
+	&-plain {
+		border: 1px solid $danger;
+		color: #333;
+		background-color: rgba(95, 183, 183, 0.3);
+		&:hover,
+		&:focus {
+			background: $danger;
+			color: #fff;
+		}
 	}
 }
 </style>

@@ -25,7 +25,6 @@
 
 <script setup>
 import { onMounted, ref } from "vue";
-import Message from "../../packages/message/index";
 const props = defineProps({
 	compName: {
 		type: String,

@@ -2,7 +2,7 @@
  * @Author: Yinzhuoxuan
  * @Date: 2022-07-01 15:37:21
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-06 14:12:18
+ * @LastEditTime: 2022-07-07 10:01:19
  * @Description: 
 -->
 <template>
@@ -57,7 +57,7 @@ export default {
 	.left-menu {
 		flex: 1.53;
 		height: auto;
-		min-width: 192px;
+		min-width: 275px;
 		overflow-y: auto;
 		border: 1px solid #f0f0f0;
 		li {

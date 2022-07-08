@@ -2,7 +2,7 @@
  * @Author: Yinzhuoxuan
  * @Date: 2022-07-06 11:01:23
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-06 16:19:31
+ * @LastEditTime: 2022-07-07 10:13:11
  * @Description: 
 -->
 <template>
@@ -70,12 +70,12 @@ const switchMenu = (item: any, index: Number) => {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		width: 700px;
-		height: 700px;
+		width: 600px;
+		height: 600px;
 		background: rgba(67, 206, 206, 0.448);
 		border: 0px solid #fff;
-		border-radius: 250px;
-		margin-top: 20px;
+		border-radius: 200px;
+		margin-top: 30px;
 		.description {
 			display: flex;
 			justify-content: center;
@@ -83,7 +83,7 @@ const switchMenu = (item: any, index: Number) => {
 			flex-direction: column;
 			h1 {
 				transform: translate(0, 40px);
-				font-size: 64px;
+				font-size: 60px;
 				margin: 0;
 				margin-top: 30px;
 				font-weight: 400;
@@ -92,7 +92,7 @@ const switchMenu = (item: any, index: Number) => {
 			}
 			h3 {
 				transform: translate(0, 60px);
-				font-size: 20px;
+				font-size: 18px;
 				line-height: 28px;
 				font-weight: 400;
 				color: #888;
@@ -100,13 +100,12 @@ const switchMenu = (item: any, index: Number) => {
 			}
 		}
 		.logo {
-			width: 500px;
-			height: 500px;
-			transform: rotate(-90deg) translate(-60px);
+			width: 400px;
+			height: 400px;
+			transform: rotate(-90deg) translate(-50px);
 		}
 	}
 	.switch {
-		margin-top: 20px;
 		width: 700px;
 		height: 100px;
 		display: flex;

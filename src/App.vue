@@ -2,7 +2,7 @@
  * @Author: Yinzhuoxuan
  * @Date: 2022-07-01 09:50:57
  * @LastEditors: Yinzhuoxuan
- * @LastEditTime: 2022-07-06 16:38:11
+ * @LastEditTime: 2022-07-07 10:18:53
  * @Description: 
 -->
 <template>
@@ -63,10 +63,16 @@ html {
 		width: auto;
 		box-shadow: 0px 16px 15px -16px rgb(0 0 0 / 10%);
 		display: flex;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		background: rgb(255, 255, 255);
+		z-index: 9999;
 
 		&-logo {
 			height: 60px;
 			flex: 1.5;
+			min-width: 275px;
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
